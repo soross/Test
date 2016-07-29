@@ -1,0 +1,197 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="name=Jacky"/>
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">	
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<title></title>
+		<link rel="prerender" href="../images/sound.mp3" />
+		<link rel="dns-prefetch" href="1251228642.cdn.myqcloud.com" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="bg01">
+		<script src="../js/loading.js"></script>
+		<article class="wrap main">
+			<audio id="car_audio" hidden src="../images/music1.mp3" loop="loop"></audio>
+			<audio id="car_audio2" hidden src="../images/music2.mp3" loop="loop"></audio>
+			<audio id="car_audio3" hidden src="../images/music3.mp3" loop="loop"></audio>
+			<!--首页-->
+			<section class="index" id="index">
+				<div class="leftBox" id="leftBox">
+					<img src="../images/index_left.jpg"/>	
+					<span class="photo">
+						<img src="../images/photo.jpg"/>
+					</span>
+					<span class="again" id="again"><img src="../images/again.png"/></span>
+				</div>
+				<div class="rightBox" id="rightBox">
+					<img src="../images/index_right.jpg"/>
+				</div>
+				<div class="monkeyBox">
+					<span class="monkey" id="monkey"></span>
+				</div>
+			</section>
+			<!--选择页 -->
+			<section class="pageStage2">
+				<div id="wrapper">
+					<div id="scroller" class="scroller">
+						<ul id="thelist">
+							<li onClick="selectCard(this)">								
+								<img class="bgImg" src="../images/select1.png">
+								<h3>送儿女</h3>
+								<div class="formBox">
+									<input type="text" name="" id="" value="亲爱的儿女" class="topName name" readonly="readonly"/>
+									<textarea name="" readonly="readonly" >春节年年要过，祝福不容错过：愿你在新的一年里成绩步步高升，老师频频赞扬，热情常常高涨，灵气源源不断，心情天天舒畅，幸福得就像花儿一样。</textarea>
+									<input type="text" name="" id="" value="用户微信昵称" class="bottomName name"  readonly="readonly"/>
+								</div>
+							</li>
+							<li onClick="selectCard(this)">
+								<img class="bgImg" src="../images/select2.png">
+								<h3>送领导</h3>
+								<div class="formBox">
+									<input type="text" name="" id="" value="尊敬的领导" class="topName name" readonly="readonly" />
+									<textarea name="" readonly="readonly" >心到，意到，祝福到！福到，运到，财气到！我在这里给您拜年啦：祝您猴年大吉，阖家幸福！</textarea>
+									<input type="text" name="" id="" value="用户微信昵称" class="bottomName name" readonly="readonly" />
+								</div>
+							</li>
+							<li onClick="selectCard(this)">
+								<img class="bgImg" src="../images/select3.png">
+								<h3>送同事</h3>
+								<div class="formBox">
+									<input type="text" name="" id="" value="可爱的同事" class="topName name" readonly="readonly"  />
+									<textarea name="" readonly="readonly" >新的猴年祝福你：老板順著你，敵人躲著你，愛人體貼你，貴人幫著你，家人護著你，彩卷偏向你，升官發財隨便你!</textarea>
+									<input type="text" name="" id="" value="用户微信昵称" class="bottomName name" readonly="readonly"  />
+								</div>
+							</li>
+							<li onClick="selectCard(this)">
+								<img class="bgImg" src="../images/select4.png">
+								<h3>送父母</h3>
+								<div class="formBox">
+									<input type="text" name="" id="" value="尊敬的父母" class="topName name" readonly="readonly" />
+									<textarea name="" readonly="readonly" >我们是伐木累，家的感觉一直如此温暖，新年了，愿爸爸妈妈福泰安康，猴年大吉！</textarea>
+									<input type="text" name="" id="" value="用户微信昵称" class="bottomName name" readonly="readonly"  />
+								</div>
+							</li>
+							<li onClick="selectCard(this)">
+								<img class="bgImg" src="../images/select5.png">
+								<h3>送爱人</h3>
+								<div class="formBox">
+									<input type="text" name="" id="" value="我的挚爱" class="topName name" readonly="readonly"  />
+									<textarea name="" readonly="readonly" >生活可以平淡，犹如蓝天碧水．生活也可以是诗，在一路奔腾中高歌．只要我们牵着手，,每个日子都是幸福！新年快乐！</textarea>
+									<input type="text" name="" id="" value="用户微信昵称" class="bottomName name" readonly="readonly" />
+								</div>
+							</li>
+							<li onClick="selectCard(this)">
+								<img class="bgImg" src="../images/select6.png">
+								<h3>送朋友</h3>
+								<div class="formBox">
+									<input type="text" name="" id="" value="亲密的朋友" class="topName name" readonly="readonly" />
+									<textarea name="" readonly="readonly" >新年已来到，向你问个好！开心无烦恼，好运跟着跑！猴年大吉，福气冲天！</textarea>
+									<input type="text" name="" id="" value="用户微信昵称" class="bottomName name" readonly="readonly" />
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tipBox">
+					<img class="tipTxt" src="../images/tiptxt.png"/>
+				</div>
+			</section>
+			<!--编辑和浏览页-->
+			<section class="pageStage3">
+				<div class="imgList">
+					<img class="bgImg2 hide" src="../images/select1.png">
+					<img class="bgImg2 hide" src="../images/select2.png">
+					<img class="bgImg2 hide" src="../images/select3.png">
+					<img class="bgImg2 hide" src="../images/select4.png">
+					<img class="bgImg2 hide" src="../images/select5.png">
+					<img class="bgImg2 hide" src="../images/select6.png">							
+				</div>
+				<div class="imgList2">
+						<img class="bgImg3 hide" src="../images/card6.jpg">
+						<img class="bgImg2 hide" src="../images/select2.png">
+						<img class="bgImg3 hide" src="../images/card5.jpg">
+						<img class="bgImg3 hide" src="../images/card4.jpg">
+						<img class="bgImg2 hide" src="../images/select5.png">
+						<img class="bgImg2 hide" src="../images/select6.png">							
+					</div>
+				<canvas class="canvas" id="canvas" width="375" height="627">当你看到这句话，说明你该换浏览器了！</canvas>
+				<div class="editorBox">
+					<ul class="effects">
+						<li class="music"><span class="leftIcon" onClick="music(this)" data-dir="left"><em></em></span><b>无音乐</b><span class="rightIcon" onClick="music(this)" data-dir="right"><em></em></span></li>
+						<li class="effective"><span class="leftIcon" onClick="effecting(this)" data-dir="left"><em></em></span><b>无特效</b><span class="rightIcon" onClick="effecting(this)" data-dir="right"><em></em></span></li>
+					</ul>
+					<div id="wrapper">
+						<div class="scroller">
+							<ul id="thelist">
+								<li>						
+									<div class="formBox">
+										<input type="text" name="" id="to" value="" class="topName name" />
+										<textarea  class="comment-area" oninput="getLimit();"  maxlength="45" name="" id="descript" ></textarea>
+										<input type="text" name="" id="from" value="" class="bottomName name" />
+										<span class="tapL" onClick="writing(this)" data-dir="left"><img src="../images/tap_l.png"/></span>
+										<span class="tapR" onClick="writing(this)" data-dir="right"><img src="../images/tap_r.png"/></span>
+									</div>
+								</li>							
+							</ul>
+						</div>
+					</div>
+					<span class="back" onClick="backSelectCard()"><img src="../images/back.png"/></span>
+					<span class="show" onClick="showDangle(this)"><img src="../images/show.png"/></span>					
+				</div>
+				
+				<div class="showBox">					
+					<div id="wrapper">
+						<div class="scroller">
+							<ul id="thelist">
+								<li>	
+									<div class="formBox">
+										<input type="text" name="" id="" value="" class="topName name" readonly="readonly" />
+										<textarea readonly="readonly"  name=""></textarea>
+										<input type="text" name="" id="" value="" class="bottomName name" readonly="readonly" />									
+									</div>
+								</li>							
+							</ul>
+						</div>
+					</div>
+					<span class="back" onClick="hideDangle()"><img src="../images/back2.png"/></span>
+					<span class="share" onClick="share()"><img src="../images/share2.png"/></span>
+				</div>
+			</section>			
+		</article>
+		<!--分享-->
+		<article class="shareCover fixed hide"  data-state="true"  >
+			<div class="cover" onClick="share()"></div>
+			<img src="../images/shareimg.png"/>
+		</article>
+		<div class="scrollCover wrapCover hide" data-state="true">
+			<div class="scrollBox">
+				<i class="close"><img src="../images/close.png" alt="" /></i>
+				<div id="slide01" class="tab">					 
+					<ul class="content">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					 </ul>
+				</div>
+				 <p class="pageHold"><span></span><span></span><span></span><span></span><span></span></p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script src="../js/jackyScroll.js"></script>
+<script src="../js/jacky.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/snow.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
