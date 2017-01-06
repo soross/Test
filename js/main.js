@@ -115,6 +115,8 @@ Jacky.util.landscape({color:'#861f1f'});
 		$('.showBox').find('textarea').val(textTxt);
 		$('.showBox').find('.topName').val(toTxt);
 		$('.showBox').find('.bottomName').val(fromTxt);
+		
+		Jacky.util.alertBox(textTxt);
 	}
 	function hideDangle(){
 		$('.editorBox,.imgList').show();
